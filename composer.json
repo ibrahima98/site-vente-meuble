@@ -1,0 +1,15 @@
+{
+    "name": "ibrahima/projet-php-e-com",
+    "authors": [
+        {
+            "name": "ibrahima98",
+            "email": "74217113+ibrahima98@users.noreply.github.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "model"
+        }
+    },
+    "require": {}
+}

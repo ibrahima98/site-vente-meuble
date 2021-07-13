@@ -1,0 +1,56 @@
+/* for Text */
+.title-larger {
+  font-size: 1.5rem;
+}
+.title-medium {
+  font-size: 1.2rem;
+}
+.title-smaller {
+  font-size: 1.1rem;
+}
+.title-section {
+  position: relative;
+}
+.title-section::after {
+  content: "";
+  position: absolute;
+  bottom: -0.2rem;
+  left: 0;
+  background-color: black;
+  height: 0.3rem;
+  width: 10%;
+  border-radius: 2rem;
+}
+.bolder-text {
+  font-weight: bold;
+}
+.inactive {
+  display: none;
+}
+.centered-text {
+  text-align: center;
+}
+/* for images */
+.img-larger {
+  width: 15rem;
+}
+.img-medium {
+  width: 7.5rem;
+}
+.img-smaller {
+  width: 05rem;
+}
+/* For Others */
+.outlined {
+  position: relative;
+}
+.outlined::after {
+  content: "";
+  position: absolute;
+  width: 80vw;
+  height: 0.15rem;
+  background-color: gray;
+  opacity: 0.3;
+  bottom: -0.1rem;
+  left: 0;
+}
