@@ -1,57 +1,16 @@
-.card {
-  border-radius: 1rem;
-  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.8);
-  font-size: 0.7rem;
-  display: flex;
-  padding: 1rem;
-  line-height: 1.4rem;
-}
-.card-col {
-  /* vertical */
-  background-color: #1b1b1b;
-  color: white;
-  flex-direction: column;
+.presentstion-aside {
+  background-color: #181f24;
+  height: 100vh;
 }
 
-.card--text {
-  font-size: 0.8rem;
-}
-.card-row {
-  /* horizontal */
-  flex-direction: row;
-  background-color: #1b1b1b;
-  color: white;
-  line-height: 1rem;
-}
-.card-primary {
-  box-shadow: none;
-  background-color: white;
-  color: #1b1b1b;
-  align-items: center;
-}
-.card--description {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-.card--footer {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 0.7rem;
-}
-
-/*les cards de services content */
-
-.services {
-  width: 100%;
-  height: 15rem;
-  background-color: brown;
-}
-.card--link {
-  display: block;
-  margin-top: 3rem;
-  text-align: center;
+.presentation-content {
+  background-image: linear-gradient(
+      to bottom left,
+      #0a0a0a,
+      rgba(0, 0, 0, 0.472)
+    ),
+    url("../../imgS/furniture.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }

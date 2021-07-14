@@ -1,6 +1,10 @@
-.section {
+.section-1,
+.section-2 {
   width: 100vw;
-  /* height: 100vh;*/
-  padding: 1.2rem;
-  
+  height: 100vh;
+}
+
+.section-1 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
 }
