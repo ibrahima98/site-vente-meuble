@@ -14,20 +14,25 @@
         <p class="logo">Logo</p>
         <ul class="link">
             <li><a href="#">Accueil</a></li>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Boutique</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Panier</a></li>
         </ul>
     </header>
     <div class="section-1">
         <div class="presentstion-aside">
-            <h1>WEBSITE</h1>
+            <h1 class="section-1-h1">WEBSITE</h1>
             <p>Lorem Ipsum is simply dummy text of the printing<br>
                 and typesetting industry. Lorem Ipsum has been the<br>
                 industry's standard dummy text ever since the 1500s,<br>
                 when an unknown printer took a galley</p>
+            <p class="card-section--btn"><a>DISCOVER</a></p>
         </div>
-        <div class="presentation-content"></div>
+        <div class="presentation-content">
+            <h3>LOREM IPSUM</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing<br>
+                and typesetting industry. Lorem Ipsum has been the </p>
+        </div>
     </div>
 
     <div class="section-2">

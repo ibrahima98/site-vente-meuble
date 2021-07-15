@@ -1,7 +1,7 @@
 .presentstion-aside {
   background-color: #181f24;
   height: 100vh;
-  padding-top: 65%;
+  padding-top: 90%;
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -16,4 +16,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding-top: 8rem;
+  padding-left: 2rem;
 }
