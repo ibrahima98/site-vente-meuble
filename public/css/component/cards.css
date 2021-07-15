@@ -1,13 +1,16 @@
 .presentstion-aside {
   background-color: #181f24;
   height: 100vh;
+  padding-top: 65%;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .presentation-content {
   background-image: linear-gradient(
       to bottom left,
       #0a0a0a,
-      rgba(0, 0, 0, 0.472)
+      rgba(0, 0, 0, 0.308)
     ),
     url("../../imgS/furniture.jpg");
   background-repeat: no-repeat;

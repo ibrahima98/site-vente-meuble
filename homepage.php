@@ -20,7 +20,13 @@
         </ul>
     </header>
     <div class="section-1">
-        <div class="presentstion-aside"></div>
+        <div class="presentstion-aside">
+            <h1>WEBSITE</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing<br>
+                and typesetting industry. Lorem Ipsum has been the<br>
+                industry's standard dummy text ever since the 1500s,<br>
+                when an unknown printer took a galley</p>
+        </div>
         <div class="presentation-content"></div>
     </div>
 
