@@ -1,7 +1,7 @@
 .presentstion-aside {
   background-color: #181f24;
   height: 100vh;
-  padding-top: 90%;
+  padding-top: 65%;
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -18,4 +18,39 @@
   background-size: cover;
   padding-top: 8rem;
   padding-left: 2rem;
+}
+
+.cards {
+  width: 100%;
+  height: 50vh;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+.card-ctn {
+  width: 11rem;
+  height: 13rem;
+  padding-top: 1rem;
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: 0 0.2rem 0.4rem rgba(230, 228, 228, 0.904);
+}
+
+.last-produit {
+  width: 100%;
+  height: 100%;
+  background-color: tomato;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.last-produit-ctn {
+  width: 32vw;
+  height: 15rem;
+  background-color: turquoise;
 }
