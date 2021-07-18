@@ -59,21 +59,21 @@
         <h1 class="last-title">Dernieres produits</h1>
         <div class="last-produit">
             <div class="last-produit-ctn">
-                <img src="./public/imgS/chaise.jpg">
+                <img src="./../public/imgS/chaise.jpg">
                 <div class="details">
                     <h4>Chaise en bois</h4>
                     <p>5000 FCFA</p>
                 </div>
             </div>
             <div class="last-produit-ctn">
-                <img src="./public/imgS/lit.jpg">
+                <img src="./../public/imgS/lit.jpg">
                 <div class="details">
                     <h4>Chaise en bois</h4>
                     <p>5000 FCFA</p>
                 </div>
             </div>
             <div class="last-produit-ctn">
-                <img src="./public/imgS/meuble.jpg">
+                <img src="./../public/imgS/meuble.jpg">
                 <div class="details">
                     <h4>Chaise en bois</h4>
                     <p>5000 FCFA</p>
