@@ -1,4 +1,4 @@
-<?php require_once "../header.php"; ?>
+<?php require_once "./../header.php"; ?>
 
 <h1>Categorie :</h1>
 <div class="categories-link">
@@ -13,4 +13,4 @@
 
 
 
-<?php require_once "../footer.php"; ?>
+<?php require_once "./../footer.php"; ?>
