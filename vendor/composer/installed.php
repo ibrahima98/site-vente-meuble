@@ -5,18 +5,18 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'ab9e04874bb5074ba349abbffa9056a3a3796b8a',
-        'name' => 'ibrahima/projet-php-e-com',
+        'reference' => '4916cbf10551ff7aad570b3b0c1a24dec1e7f163',
+        'name' => 'hp/site-vente-immobilier1',
         'dev' => true,
     ),
     'versions' => array(
-        'ibrahima/projet-php-e-com' => array(
+        'hp/site-vente-immobilier1' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'ab9e04874bb5074ba349abbffa9056a3a3796b8a',
+            'reference' => '4916cbf10551ff7aad570b3b0c1a24dec1e7f163',
             'dev_requirement' => false,
         ),
     ),

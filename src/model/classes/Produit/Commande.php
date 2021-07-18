@@ -1,5 +1,7 @@
 <?php
 
+namespace App;
+
 class Commande
 {
     private $id;
@@ -7,4 +9,9 @@ class Commande
     private $client;
     private $date;
     private $quantite;
+
+    public function __construct()
+    {
+        echo "Wahab";
+    }
 }
