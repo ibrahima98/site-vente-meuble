@@ -27,11 +27,12 @@ h1 {
   margin-left: 1rem;
 }
 
-/* .section-1-h1 {
-  position: absolute;
-  top: 15rem;
-  transform: translate(6rem);
-} */
+.categories h1 {
+  font-size: 3rem;
+  color: #294161da;
+  font-style: normal;
+}
+
 h2,
 h3,
 h5 {

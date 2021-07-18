@@ -6,7 +6,7 @@
             and typesetting industry. Lorem Ipsum has been the<br>
             industry's standard dummy text ever since the 1500s,<br>
             when an unknown printer took a galley</p>
-        <p class="card-section--btn"><a>DISCOVER</a></p>
+        <p class="card-section--btn"><a href="#">DISCOVER</a></p>
     </div>
     <div class="presentation-content">
         <h3>LOREM IPSUM</h3>

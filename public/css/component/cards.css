@@ -32,7 +32,7 @@
 }
 
 .card-ctn {
-  height: 13rem;
+  height: 14rem;
   padding-top: 1rem;
   background-color: #ffffff;
   text-align: center;
@@ -103,4 +103,10 @@
 
 .categories-link li a {
   display: block;
+}
+
+.proprites {
+  color: #294161da;
+  background-color: #f9f9f9;
+  height: 3rem;
 }

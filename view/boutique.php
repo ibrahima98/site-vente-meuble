@@ -2,7 +2,7 @@
 
 
 <div class="categories">
-    <h1>Categorie :</h1>
+    <h1>Categories :</h1>
     <ul class="categories-link">
         <li><a href="#">Chaise</a></li>
         <li><a href="#">Feuteuil</a></li>
