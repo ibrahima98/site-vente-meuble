@@ -25,6 +25,9 @@ class Produit
         }
     }
 
+
+    //Pour les getters
+
     public function getId_produit()
     {
         return $this->id_produit;
@@ -56,6 +59,7 @@ class Produit
     }
 
 
+    // Pour les setters
     public function setId_produit($id)
     {
         $this->id_produit = $id;
