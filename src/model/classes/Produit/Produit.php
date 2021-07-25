@@ -2,27 +2,28 @@
 
 namespace App;
 
+require_once("../../../../vendor/autoload.php");
+
+use App\Categorie;
+
+
 class Produit
 {
     private $id_produit;
     private $nom;
-    private $price;
+    private $prix;
     private $categorie;
     private $description;
     private $image;
 
-    public function __construct(array $data)
+    public function __construct($id_produit = 0, $nom = "", $prix = "", Categorie  $categorie, $description = "", $image = null)
     {
-        foreach ($data as $key => $value) {
-            // On récupère le nom du setter correspondant à l'attribut.
-            $method = 'set' . ucfirst($key);
-
-            // Si le setter correspondant existe.
-            if (method_exists($this, $method)) {
-                // On appelle le setter.
-                $this->$method($value);
-            }
-        }
+        $this->id_produit = $id_produit;
+        $this->nom = $this->setNom($nom);
+        $this->prix = $this->setPrix($prix);
+        $this->categorie = $this->setCategorie($categorie);
+        $this->description = $this->setDescription($description);
+        $this->image = $this->setImage($image);
     }
 
 
@@ -38,14 +39,14 @@ class Produit
         return $this->nom;
     }
 
-    public function getPrice()
+    public function getPrix()
     {
-        return $this->price;
+        return $this->prix;
     }
 
     public function getCategorie()
     {
-        return $this->cetegorie;
+        return $this->categorie;
     }
 
     public function getDescription()
@@ -70,9 +71,9 @@ class Produit
         $this->nom = $nom;
     }
 
-    public function setPrice($price)
+    public function setPrix($prix)
     {
-        $this->price = $price;
+        $this->price = $prix;
     }
 
     public function setCategorie($categorie)
