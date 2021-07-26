@@ -121,6 +121,7 @@
   margin-bottom: 1rem;
 }
 .ctn-article {
+  position: relative;
   padding-top: 1rem;
   /* background-color: turquoise; */
   text-align: center;

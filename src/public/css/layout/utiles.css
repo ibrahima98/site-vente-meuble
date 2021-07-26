@@ -78,3 +78,21 @@ svg {
   font-size: 2rem;
   margin-top: 0.5rem;
 }
+
+.ajoutPanier-btn {
+  width: 3rem;
+  height: 3rem;
+  background-color: #80ef40;
+  border-radius: 50%;
+  position: absolute;
+  top: -1.3rem;
+  right: -1.3rem;
+}
+.ajoutPanier-btn a {
+  display: block;
+}
+
+.ajoutPanier-btn a svg {
+  width: 1rem;
+  /* height: 0.5rem; */
+}
