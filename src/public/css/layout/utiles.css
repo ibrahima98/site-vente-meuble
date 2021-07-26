@@ -60,6 +60,10 @@ svg {
   height: 3rem;
   margin-bottom: 1rem;
 }
+ul li a svg {
+  width: 2rem;
+  height: 2rem;
+}
 
 .cart {
   display: flex;

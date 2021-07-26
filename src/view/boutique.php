@@ -5,7 +5,7 @@
     <h1>Categories :</h1>
     <ul class="categories-link">
         <li><a href="#">Chaise</a></li>
-        <li><a href="#">Feuteuil</a></li>
+        <li><a href="#">Fauteuil</a></li>
         <li><a href="#">Lit</a></li>
         <li><a href="#">Table</a></li>
         <li><a href="#">Salon</a></li>

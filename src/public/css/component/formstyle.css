@@ -12,6 +12,11 @@
   height: 4rem;
 }
 
+.logofooter img {
+  width: 14rem;
+  height: 11rem;
+}
+
 h1 {
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;

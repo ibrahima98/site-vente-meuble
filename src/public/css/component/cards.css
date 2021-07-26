@@ -85,7 +85,12 @@
   padding-left: 2.3rem;
 }
 
+.categories h1 {
+  padding-left: 8rem;
+}
+
 .categories-link {
+  margin: 0 auto;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   width: 50vw;
