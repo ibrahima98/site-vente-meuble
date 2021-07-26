@@ -1,11 +1,24 @@
 .section-1,
-.section-2 {
+.section-2,
+.article-section {
   width: 100vw;
   height: 100vh;
+}
+
+.section-2 {
+  margin-bottom: 3rem;
 }
 
 .section-1 {
   display: grid;
   grid-template-columns: 1.2fr 3fr;
   color: white;
+}
+
+.article-section {
+  padding-top: 8rem;
+  padding-right: 12rem;
+  padding-bottom: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
 }

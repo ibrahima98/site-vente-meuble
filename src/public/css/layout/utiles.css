@@ -32,13 +32,13 @@
 }
 /* for images */
 .img-larger {
-  width: 15rem;
+  width: 30rem;
 }
 .img-medium {
   width: 7.5rem;
 }
 .img-smaller {
-  width: 05rem;
+  width: 07rem;
 }
 /* For Others */
 .outlined {
@@ -72,4 +72,9 @@ svg {
   width: 1.5rem;
   height: 1.5rem;
   margin-bottom: 0;
+}
+
+.prix {
+  font-size: 2rem;
+  margin-top: 0.5rem;
 }

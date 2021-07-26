@@ -110,3 +110,22 @@
   background-color: #f9f9f9;
   height: 3rem;
 }
+
+.aside-article {
+  /* background-color: wheat; */
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.aside-article p {
+  margin-bottom: 1rem;
+}
+.ctn-article {
+  padding-top: 1rem;
+  /* background-color: turquoise; */
+  text-align: center;
+  box-shadow: 0 0.2rem 0.4rem 0.3rem rgba(230, 228, 228, 0.904);
+}
+.aside-article-ctn div {
+  margin-bottom: 1rem;
+}
