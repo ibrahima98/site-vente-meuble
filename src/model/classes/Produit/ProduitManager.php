@@ -2,12 +2,14 @@
 
 namespace App;
 
-require_once("./../../../../vendor/autoload.php");
+require_once dirname(dirname(dirname(dirname(dirname(__FILE__))))) . "\\vendor\autoload.php";
 
 use App\Database;
 
+
 use PDOException;
 use PDO;
+
 
 class ProduitManager
 {
@@ -25,8 +27,7 @@ class ProduitManager
     public function addModule($produit)
     {
         //Utilisation d'une requêt paramétrée pour insertion dans la table module
-        $requete = "INSERT INTO " .
-            $this->tableName . "(nom, description, prix, categorie,image)
+        $requete = "INSERT INTO " . $this->tableName . "(nom, description, prix, categorie,image)
                 VALUES(:nom, :description, :prix, :categorie, :image)";
 
         //On récupère les données stockées dans les attributs de l'objet 
@@ -41,10 +42,10 @@ class ProduitManager
         //dans les attributs de l'objet module
         $stmt = $this->conn->prepare($requete);
 
-        $stmt->bindValue(':nom', $nom);
+        $stmt->bindValue(':nom', $nom,);
         $stmt->bindValue(':description', $description);
         $stmt->bindValue(':prix', $prix);
-        $stmt->bindValue(':categorie', $categorie);
+        $stmt->bindValue(':categorie', $categorie, PDO::PARAM_INT);
         $stmt->bindValue(':image', $image);
 
 
@@ -87,27 +88,61 @@ class ProduitManager
         }
     }
 
+    //Recherche
+
+    public function rechercheProduit($nom)
+    {
+        $requete = ("SELECT * FROM produit WHERE nom LIKE :nom ORDER BY prix DESC");
+        $stmt = $this->conn->prepare($requete);
+        $stmt->bindValue(':nom', "%$nom%");
+        $stmt->execute();
+        $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $products;
+    }
 
     //Supprimer un module par son id dans la table module
     public function deleteModule($id)
     {
-        $requete = "DELETE FROM " . $this->tableName . " WHERE id=:id";
+        $requete = "DELETE FROM " . $this->tableName . " WHERE id_produit=:id";
         $idProduit = $id;
         $stmt = $this->conn->prepare($requete);
         $stmt->bindValue(':id', $idProduit);
         try {
             $stmt->execute();
+            return header('Location: main.php');
         } catch (PDOException $ex) {
             die("La suppression a échoué: " . $ex->getMessage());
         }
     }
 
 
+
+    //Sélectionner un module par son id dans la table module
+    public function getProduitById($id)
+    {
+        $requete = "SELECT id_produit, nom, description,prix, categorie, image FROM " .
+            $this->tableName . " WHERE id = ?";
+
+        $id_produit = $id;
+        $stmt = $this->conn->prepare($requete);
+        $stmt->bindParam(1, $id_produit);
+        try {
+            $stmt->execute();
+        } catch (PDOException $ex) {
+            die("L'exécuation de la requête a échoué: " . $ex->getMessage());
+        }
+        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+        if ($row == false) {
+            echo  $row . " n'existe pas dans la base";
+        }
+        return $row;
+    }
+
     //Sélectionner tous les modules dans la table module
     public function getAllProduit()
     {
         $requete = "SELECT id_produit, nom, description, prix, categorie, image FROM " .
-            $this->tableName . " ORDER BY nom_module ";
+            $this->tableName . " ORDER BY nom ";
 
         $stmt = $this->conn->prepare($requete);
         try {

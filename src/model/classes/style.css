@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+}
+
+h1 {
+  margin-top: 5rem;
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+  color: #186bad;
+}
+.carsTable {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.carsTable td,
+.carsTable th {
+  /* border: 1px solid #ddd; */
+  padding: 8px;
+  width: 15%;
+  text-align: center;
+}
+
+.carsTable td {
+  color: #186bad;
+}
+.carsTable thead th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #186bad;
+  color: white;
+}
+/* .carsTable tbody th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: rgb(69, 245, 113);
+  color: white;
+} */
+
+tr:nth-child(even) {
+  background: #f1f4f6;
+}
+
+.ctnbtn {
+  display: flex;
+  flex-direction: column;
+}
+
+.cntbtn button {
+  margin-top: 0.5rem;
+  border-radius: 0.8rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+  width: 3rem;
+  height: 2rem;
+  background-color: #4dac58;
+  color: whitesmoke;
+}
+
+button.bgcred {
+  width: 4rem;
+  background-color: rgba(211, 29, 29, 0.747);
+}
+
+button.bgcred:hover {
+  background-color: red;
+}
+a.bgcgreen {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  border-radius: 0.8rem;
+  font-size: 0.9rem;
+  width: 3rem;
+  height: 2rem;
+  line-height: 2rem;
+  background-color: #4dac58;
+  color: whitesmoke;
+}
+a.bgcgreen:hover {
+  background-color: rgb(3, 104, 3);
+}
+
+.retour {
+  width: 12rem;
+  height: 2rem;
+  margin-left: 4rem;
+  background-color: #92b696;
+  border-radius: 0.8rem;
+  margin-top: 2rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.retour a {
+  display: block;
+  color: #186bad;
+  text-decoration: none;
+}
+.createCtn {
+  width: 9rem;
+  border-radius: 1rem;
+  background-color: #4dac58;
+
+  margin-top: 3rem;
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+}
+.create {
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 1rem;
+}
+
+.form1 {
+  width: 70rem;
+  margin-left: 4rem;
+}
+
+.form1 div {
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.form1 div label {
+  margin-bottom: 0.5rem;
+  color: #186bad;
+}
+
+.form1 div .inputText {
+  height: 2rem;
+  border: 1px solid #186bad;
+  border-radius: 0.5rem;
+}
+
+.form1 div input:focus {
+  outline: none;
+}
+
+.areatext {
+  height: 6rem;
+  border: 1px solid #186bad;
+  border-radius: 0.5rem;
+}
+.areatext:focus {
+  outline: none;
+}
+
+.valider {
+  margin-top: 0.3rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+  width: 5rem;
+  height: 2rem;
+  background-color: #4dac58;
+  color: whitesmoke;
+}
+
+.h1create {
+  margin-top: 2rem;
+}
+
+.errorctn {
+  width: 50rem;
+  height: 4rem;
+  margin-left: 3rem;
+}
+.error {
+  background-color: rgb(226, 226, 226);
+  color: rgba(156, 5, 5, 0.733);
+}
+
+.thumb-img {
+  width: 45px;
+}
+
+.img-modif {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 1rem;
+}
+
+.h1create1 {
+  font-weight: 200;
+}
+
+.cnt-search {
+  display: flex;
+}
+
+.search {
+  margin-left: 20rem;
+  margin-bottom: 1.8rem;
+  font-size: 1.3rem;
+  color: #186bad;
+  width: 20rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  border-bottom: 1px solid #186bad;
+}
+
+.search:focus {
+  outline: none;
+}
+.btnSearh {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  width: 6rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #4dac58;
+  cursor: pointer;
+  color: white;
+}

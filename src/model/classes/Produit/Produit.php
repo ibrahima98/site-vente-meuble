@@ -2,37 +2,33 @@
 
 namespace App;
 
-require_once("../../../../vendor/autoload.php");
+require_once dirname(dirname(dirname(dirname(dirname(__FILE__))))) . "\\vendor\autoload.php";
 
 use App\Categorie;
 
 
 class Produit
 {
-    private $id_produit;
+
     private $nom;
     private $prix;
     private $categorie;
     private $description;
     private $image;
 
-    public function __construct($id_produit = 0, $nom = "", $prix = "", Categorie  $categorie, $description = "", $image = null)
+    public function __construct($nom = "", $prix = "", Categorie  $categorie, $description = "", $image = null)
     {
-        $this->id_produit = $id_produit;
-        $this->nom = $this->setNom($nom);
-        $this->prix = $this->setPrix($prix);
-        $this->categorie = $this->setCategorie($categorie);
-        $this->description = $this->setDescription($description);
-        $this->image = $this->setImage($image);
+
+        $this->nom = $nom;
+        $this->prix = $prix;
+        $this->categorie = $categorie;
+        $this->description = $description;
+        $this->image = $image;
     }
 
 
     //Pour les getters
 
-    public function getId_produit()
-    {
-        return $this->id_produit;
-    }
 
     public function getNom()
     {
@@ -61,10 +57,6 @@ class Produit
 
 
     // Pour les setters
-    public function setId_produit($id)
-    {
-        $this->id_produit = $id;
-    }
 
     public function setNom($nom)
     {
