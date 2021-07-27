@@ -7,7 +7,7 @@
             Fait, ou peut etre decouvrir qui on est, histoire d’etre sur de ne pas<br>
             Vous faire avoir. Bon reflexe.<br>
             On va commenter par faire court.<br>
-            Chez LyShop, on s’est fixe une mission : mettre la qualite dans<br>
+            Chez LYshop, on s’est fixe une mission : mettre la qualite dans<br>
             Vos espaces<br>
             Concretement, on essaie de proposer un vestiaire de meubles<br>
             Beaux, durables et accessibles.<br>

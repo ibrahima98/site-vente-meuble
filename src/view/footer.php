@@ -20,7 +20,7 @@
         </div>
     </div>
 
-    <p>Abdoul W Ly-Ibrahima Ly LyShop © 2021. Tous droits réservés.</p>
+    <p>Abdoul W Ly-Ibrahima Ly LYshop © 2021. Tous droits réservés.</p>
 </footer>
 
 <script src="./../public/js/script.js"></script>
