@@ -13,7 +13,7 @@ h1 {
   margin-top: 5rem;
   margin-left: 4rem;
   margin-bottom: 2rem;
-  color: #186bad;
+  color: #293a4c;
 }
 .carsTable {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -31,18 +31,18 @@ h1 {
 }
 
 .carsTable td {
-  color: #186bad;
+  color: #293a4c;
 }
 .carsTable thead th {
   padding-top: 12px;
   padding-bottom: 12px;
-  background-color: #186bad;
+  background-color: #293a4c;
   color: white;
 }
 /* .carsTable tbody th {
   padding-top: 12px;
   padding-bottom: 12px;
-  background-color: rgb(69, 245, 113);
+  background-color: #293a4c;
   color: white;
 } */
 
@@ -95,7 +95,7 @@ a.bgcgreen:hover {
   width: 12rem;
   height: 2rem;
   margin-left: 4rem;
-  background-color: #92b696;
+  background-color: #293a4c;
   border-radius: 0.8rem;
   margin-top: 2rem;
   line-height: 2rem;
@@ -104,13 +104,13 @@ a.bgcgreen:hover {
 
 .retour a {
   display: block;
-  color: #186bad;
+  color: #293a4c;
   text-decoration: none;
 }
 .createCtn {
   width: 9rem;
   border-radius: 1rem;
-  background-color: #4dac58;
+  background-color: #293a4c;
 
   margin-top: 3rem;
   margin-left: 4rem;
@@ -138,12 +138,12 @@ a.bgcgreen:hover {
 
 .form1 div label {
   margin-bottom: 0.5rem;
-  color: #186bad;
+  color: #293a4c;
 }
 
 .form1 div .inputText {
   height: 2rem;
-  border: 1px solid #186bad;
+  border: 1px solid #293a4c;
   border-radius: 0.5rem;
 }
 
@@ -153,7 +153,7 @@ a.bgcgreen:hover {
 
 .areatext {
   height: 6rem;
-  border: 1px solid #186bad;
+  border: 1px solid #293a4c;
   border-radius: 0.5rem;
 }
 .areatext:focus {
@@ -168,7 +168,7 @@ a.bgcgreen:hover {
   border: none;
   width: 5rem;
   height: 2rem;
-  background-color: #4dac58;
+  background-color: #293a4c;
   color: whitesmoke;
 }
 
@@ -214,7 +214,7 @@ a.bgcgreen:hover {
   height: 2.5rem;
   border-radius: 0.5rem;
   border: none;
-  border-bottom: 1px solid #186bad;
+  border-bottom: 1px solid #293a4c;
 }
 
 .search:focus {
@@ -227,7 +227,7 @@ a.bgcgreen:hover {
   height: 2.5rem;
   border: none;
   border-radius: 0.5rem;
-  background-color: #4dac58;
+  background-color: #293a4c;
   cursor: pointer;
   color: white;
 }
