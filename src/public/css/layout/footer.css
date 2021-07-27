@@ -1,15 +1,27 @@
 footer {
   width: 100vw;
-  height: 20rem;
+  height: 8rem;
   background-color: #293a4c;
   color: white;
   /* font-size: 4rem; */
   text-align: center;
+  /* position: fixed; */
 }
 
-#foot div ul {
+.foot-1 ul {
   margin-top: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.foot-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+}
+
+.foot-1 div {
+  margin-top: 2rem;
 }
