@@ -2,10 +2,16 @@
 <div class="section-1">
     <div class="presentstion-aside">
         <h1 class="section-1-h1">LYshop</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing<br>
-            and typesetting industry. Lorem Ipsum has been the<br>
-            industry's standard dummy text ever since the 1500s,<br>
-            when an unknown printer took a galley</p>
+        <p>SI VOUS ETES ARRIVE LA,<br>
+            C’est sans doute que vous voulez savoir ce qu’on fait, pourquoi on le
+            Fait, ou peut etre decouvrir qui on est, histoire d’etre sur de ne pas<br>
+            Vous faire avoir. Bon reflexe.<br>
+            On va commenter par faire court.<br>
+            Chez LyShop, on s’est fixe une mission : mettre la qualite dans<br>
+            Vos espaces<br>
+            Concretement, on essaie de proposer un vestiaire de meubles<br>
+            Beaux, durables et accessibles.<br>
+        </p>
         <p class="card-section--btn"><a href="./boutique.php">DISCOVER</a></p>
     </div>
     <div class="presentation-content">
