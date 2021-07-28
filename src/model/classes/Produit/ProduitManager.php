@@ -64,7 +64,7 @@ class ProduitManager
     public function editModule($id, $produit)
     {
         $requete = "UPDATE " . $this->tableName . " SET nom= :nom,
-                    description=:description, prix=:prix, categorie=:categorie, image=:image WHERE id=:id";
+                    description=:description, prix=:prix, categorie=:categorie, image=:image WHERE id_produit=:id";
 
         $id_produit = $id;
         $nom = $produit->getNom();
@@ -121,11 +121,11 @@ class ProduitManager
     public function getProduitById($id)
     {
         $requete = "SELECT id_produit, nom, description,prix, categorie, image FROM " .
-            $this->tableName . " WHERE id = ?";
+            $this->tableName . " WHERE id_produit =:id";
 
         $id_produit = $id;
         $stmt = $this->conn->prepare($requete);
-        $stmt->bindParam(1, $id_produit);
+        $stmt->bindValue(':id', $id_produit);
         try {
             $stmt->execute();
         } catch (PDOException $ex) {

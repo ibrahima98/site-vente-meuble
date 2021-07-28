@@ -16,7 +16,7 @@ class Produit
     private $description;
     private $image;
 
-    public function __construct($nom = "", $prix = "", Categorie  $categorie, $description = "", $image = null)
+    public function __construct($nom = "", $prix = "", $categorie, $description = "", $image = null)
     {
 
         $this->nom = $nom;

@@ -98,13 +98,14 @@ a.bgcgreen:hover {
   background-color: #293a4c;
   border-radius: 0.8rem;
   margin-top: 2rem;
+
   line-height: 2rem;
   text-align: center;
 }
 
 .retour a {
   display: block;
-  color: #293a4c;
+  color: white;
   text-decoration: none;
 }
 .createCtn {
@@ -174,6 +175,7 @@ a.bgcgreen:hover {
 
 .h1create {
   margin-top: 2rem;
+  color: white;
 }
 
 .errorctn {

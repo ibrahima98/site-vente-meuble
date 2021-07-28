@@ -1,19 +1,30 @@
 <?php
 
-use App\Categorie;
 use App\Database;
 use App\Produit;
 use App\ProduitManager;
 
 require_once dirname(dirname(dirname(dirname(__FILE__)))) . "\\vendor\autoload.php";
 
+$db = new Database();
+
+$pManager = new ProduitManager($db);
+
+$id = $_GET['id'] ?? null;
+
+if (!$id) {
+    header('Location: main.php');
+    exit;
+}
 
 
+$product = $pManager->getProduitById($id);
 
 $errors = [];
-$nom = '';
-$price = '';
-$description = '';
+$cate =  $product['categorie'];
+$nom = $product['nom'];
+$description = $product['description'];
+$prix = $product['prix'];
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
@@ -22,13 +33,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $description = $_POST['description'];
     $prix = $_POST['prix'];
 
-    $db = new Database;
-
-    $pManager = new ProduitManager($db);
-
-
     if (!$nom) {
-        $errors[] = 'Product title is required';
+        $errors[] = 'Product nom is required';
     }
     if (!$prix) {
         $errors[] = 'Product price is required';
@@ -40,21 +46,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (empty($errors)) {
         $image = $_FILES['image'] ?? null;
-        $imagePath = '';
+        $imagePath = $product['image'];
+
 
         if ($image && $image['tmp_name']) {
 
+            if ($product['image']) {
+                unlink($product['image']);
+            }
+
             $imagePath = 'images/' . randomString(8) . '/' . $image['name'];
-
-
             mkdir(dirname($imagePath));
+
 
             move_uploaded_file($image['tmp_name'], $imagePath);
         }
 
-
         $produit = new Produit($nom, $prix, $cate, $description, $imagePath);
-        $pManager->addModule($produit);
+        $pManager->editModule($id, $produit);
     }
 }
 
@@ -70,9 +79,9 @@ function randomString($n)
     return $str;
 }
 ?>
-<!DOCTYPE html>
 
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -84,12 +93,15 @@ function randomString($n)
 
 <body>
 
-    <h1 class="h1create">Create new Product :</h1>
+    <p class="retour">
+        <a href="main.php">Go Back to Products</a>
+    </p>
+    <h1 class="h1create1">Update Product <b><?php echo $product['nom'] ?></b>:</h1>
 
     <?php if (!empty($errors)) : ?>
         <div class="errorctn">
             <?php foreach ($errors as $error) : ?>
-                <div class="error"><?php echo $error; ?></div>
+                <div class="error"><?php echo $error ?></div>
             <?php endforeach; ?>
         </div>
     <?php endif; ?>
@@ -97,13 +109,17 @@ function randomString($n)
 
     <form action="" method="post" enctype="multipart/form-data" class="form1">
 
+        <?php if ($product['image']) : ?>
+            <img src="<?php echo $product['image'] ?>" class="img-modif">
+        <?php endif; ?>
+
         <div>
             <label>Product Image</label>
             <input type="file" name="image" class="inputTextimg">
         </div>
 
         <div>
-            <label>Product Name</label>
+            <label>Product Title</label>
             <input type="text" name="nom" class="inputText" value="<?php echo $nom ?>">
         </div>
 
@@ -129,8 +145,10 @@ function randomString($n)
             </select>
 
         </div>
+
         <button type="submit" class="valider">Submit</button>
     </form>
+
 </body>
 
 </html>
