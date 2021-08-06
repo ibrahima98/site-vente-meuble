@@ -18,7 +18,7 @@
         ?> 
           
                 <div class="boutique-ctn">
-                      <img src="./../public/imgS/meuble.jpg">
+                <img src="../../src/model/classes/<?=$produit->image?>">
                      <div class="proprites">
                           <h4><?=ucwords($produit->nom);?></h4>
                           <p>Price:<?=number_format($produit->prix,2,',','');?> £</p>

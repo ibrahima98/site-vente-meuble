@@ -1,11 +1,13 @@
 <?php
 namespace App;
 use App\Database;
+use App\ProduitManager;
 /*use App\Categorie;
 
 use App\Produit;
 use App\ProduitManager;*/
 //require_once("../../src/model/classes/Produit/Database.php");
+
 require_once("../../vendor/autoload.php");
 
 
@@ -19,4 +21,4 @@ $DB->getConnection();
     $contain=$DB->getInfoBdd('SELECT * FROM produit ORDER BY id_produit DESC ');
 
 
-
+  

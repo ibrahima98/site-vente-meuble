@@ -69,14 +69,16 @@
           foreach ($contains as  $produit):
         ?> 
             <div class="last-produit-ctn">
-                <img src="./../public/imgS/chaise.jpg">
+                <img src="../../src/model/classes/<?=$produit->image?>">
                 <div class="details">
-                    <h4><?=ucwords($produit->nom);?> </h4>
-                    <p>Price: <span><?=number_format($produit->prix,2,',','');?> </span>£</p>
+                    <a href="#" class='paniers'><h4><?=ucwords($produit->nom);?> </h4>
+                    <p>Price: <span><?=number_format($produit->prix,2,',','');?> </span>£ </p>
+                    </a> 
                 </div>
+               
             </div>
             <?php endforeach?>
-           
+            
 
         </div>
     </div>
