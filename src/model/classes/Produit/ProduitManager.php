@@ -153,4 +153,5 @@ class ProduitManager
         }
         $rowProduit = $stmt->fetchAll(PDO::FETCH_ASSOC);
         return $rowProduit;
+    }
 }
