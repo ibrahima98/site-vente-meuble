@@ -16,6 +16,28 @@ class Database
     private static $username = "root";
     private static $password = "";
     private static $conn = null;
+    private $req;
+
+   /* public function __construct($host=null, $username=null,$password=null,$dbName=null){
+        if($host !=null){
+            $this->host=$host;
+            $this->username=$username;
+            $this->password=$password;
+            $this->dbName=$dbName;
+           
+        }
+        try{
+             $this->db=new PDO('mysql:host='.$this->host.';dbname='.$this->database, $this->username, $this->password, array(
+                 PDO::MYSQL_ATTR_INIT_COMMAND=>'SET NAMES UTF8',
+                 PDO::ATTR_ERRMODE=>PDO::ERRMODE_WARNING ));
+
+         }catch(PDOException $e){
+             
+             die('<h1>impossible de se connecter à  la base de données</h1>');
+         }
+         
+
+      }  */
 
     public static function getConnection()
     {
@@ -44,4 +66,47 @@ class Database
     {
         self::$conn = null;
     }
+   
+    public function getInfoBdd($sql){
+        $this->req=$this->getConnection()->prepare($sql);
+         $this->req->execute();
+         return $this->req->fetchAll(PDO::FETCH_OBJ);
+        /* $rowProduit = $stmt->fetchAll(PDO::FETCH_ASSOC);
+         foreach ($rowProduit as $key=> $value) {
+            echo $rowProduit;
+             
+             return $rowProduit;
+        }*/
+     }
+    
+     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*
+     fonction a ne pas toucher pour réutiliser sur d'autre projet ne pas toucher
+    public function getdb($sql){
+            
+
+        $this->req=$this->getConnection()->prepare($sql);
+        $this->req->execute();
+        $contains=$this->req->fetchAll(PDO::FETCH_ASSOC); 
+        foreach ($contains as $key=>$value) {
+          // echo $value['nom'];
+           return $contains;
+        }
+        
+    }*/

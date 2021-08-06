@@ -11,54 +11,21 @@
         <li><a href="#">Salon</a></li>
     </ul>
 </div>
-
 <div class="boutique">
-    <div class="boutique-ctn">
-        <img src="./../public/imgS/meuble.jpg">
-        <div class="proprites">
-            <h4>Chaise en bois</h4>
-            <p>5000 FCFA</p>
-        </div>
-    </div>
-    <div class="boutique-ctn">
-        <img src="./../public/imgS/meuble.jpg">
-        <div class="proprites">
-            <h4>Chaise en bois</h4>
-            <p>5000 FCFA</p>
-        </div>
-    </div>
-    <div class="boutique-ctn">
-        <img src="./../public/imgS/meuble.jpg">
-        <div class="proprites">
-            <h4>Chaise en bois</h4>
-            <p>5000 FCFA</p>
-        </div>
-    </div>
-    <div class="boutique-ctn">
-        <img src="./../public/imgS/lit.jpg">
-        <div class="proprites">
-            <h4>Chaise en bois</h4>
-            <p>5000 FCFA</p>
-        </div>
-    </div>
-
-    <div class="boutique-ctn">
-        <img src="./../public/imgS/lit.jpg">
-        <div class="proprites">
-            <h4>Chaise en bois</h4>
-            <p>5000 FCFA</p>
-        </div>
-    </div>
-    <div class="boutique-ctn">
-        <img src="./../public/imgS/meuble.jpg">
-        <div class="proprites">
-            <h4>Chaise en bois</h4>
-            <p>5000 FCFA</p>
-        </div>
-    </div>
-
-</div>
-
-
+<?php 
+   require "../../src/controller/control.php";
+    foreach ($contain as  $produit):
+        ?> 
+          
+                <div class="boutique-ctn">
+                      <img src="./../public/imgS/meuble.jpg">
+                     <div class="proprites">
+                          <h4><?=ucwords($produit->nom);?></h4>
+                          <p>Price:<?=number_format($produit->prix,2,',','');?> £</p>
+                     </div>
+                 </div>
+           
+     <?php endforeach?>
+     </div>
 
 <?php require_once "footer.php"; ?>
