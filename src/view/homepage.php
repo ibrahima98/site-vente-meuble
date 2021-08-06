@@ -64,27 +64,19 @@
     <div class="last">
         <h1 class="last-title">Dernieres produits</h1>
         <div class="last-produit">
+        <?php 
+        require "../../src/controller/control.php";
+          foreach ($contains as  $produit):
+        ?> 
             <div class="last-produit-ctn">
                 <img src="./../public/imgS/chaise.jpg">
                 <div class="details">
-                    <h4>Chaise en bois</h4>
-                    <p>5000 FCFA</p>
+                    <h4><?=ucwords($produit->nom);?> </h4>
+                    <p>Price: <span><?=number_format($produit->prix,2,',','');?> </span>£</p>
                 </div>
             </div>
-            <div class="last-produit-ctn">
-                <img src="./../public/imgS/lit.jpg">
-                <div class="details">
-                    <h4>Chaise en bois</h4>
-                    <p>5000 FCFA</p>
-                </div>
-            </div>
-            <div class="last-produit-ctn">
-                <img src="./../public/imgS/meuble.jpg">
-                <div class="details">
-                    <h4>Chaise en bois</h4>
-                    <p>5000 FCFA</p>
-                </div>
-            </div>
+            <?php endforeach?>
+           
 
         </div>
     </div>

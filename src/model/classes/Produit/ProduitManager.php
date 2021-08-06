@@ -42,7 +42,7 @@ class ProduitManager
         //dans les attributs de l'objet module
         $stmt = $this->conn->prepare($requete);
 
-        $stmt->bindValue(':nom', $nom,);
+        $stmt->bindValue(':nom', $nom);
         $stmt->bindValue(':description', $description);
         $stmt->bindValue(':prix', $prix);
         $stmt->bindValue(':categorie', $categorie, PDO::PARAM_INT);
@@ -153,5 +153,4 @@ class ProduitManager
         }
         $rowProduit = $stmt->fetchAll(PDO::FETCH_ASSOC);
         return $rowProduit;
-    }
 }
