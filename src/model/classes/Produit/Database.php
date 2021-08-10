@@ -78,6 +78,12 @@ class Database
              return $rowProduit;
         }*/
      }
+     public function query($sql, $data=array()){
+        $this->req=$this->getConnection()->prepare($sql);
+       $this->req->execute($data);
+        return $this->req->fetchAll(PDO:: FETCH_OBJ);
+       
+      }
     
      
 }

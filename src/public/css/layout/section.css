@@ -27,3 +27,58 @@
   color: black;
 }
 
+table{
+ 
+  margin: auto;
+  padding: 1vh;
+}
+tr{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr ;
+  column-gap: 5vh;
+  padding-bottom: 5vh;
+ 
+}th{
+  font-size: 1.5rem;
+  display: grid;
+   
+}.td{
+  text-align: center;
+  font-size: 1.2rem;  
+  border-radius: 2vh;
+  
+}.img1{
+  width: auto;
+  height: 10vh;
+}.contain-cart{
+  
+  height: 20vh;
+  background-color: gainsboro;
+}
+
+.titre{
+position: absolute;
+ text-align:start;
+  color: black;
+  font-size: 2.3rem;
+  width: 40vh;
+  left: 30vh;
+  top: 20vh;
+}.paiement{
+  position: absolute;
+  right: 28vh;
+  width: 25vh;
+  height: 7vh;
+  top: 20vh;
+  font-size: 1.2rem;
+  background-color: yellowgreen;
+}.sections{
+  position: absolute;
+  top: 35vh;
+  left: 30vh;
+}.pan{
+  margin-left: -2vh;
+  width: 20vh;
+  height: 20vh;
+
+}
