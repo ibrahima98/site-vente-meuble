@@ -71,7 +71,7 @@
             <div class="last-produit-ctn">
                 <img src="../../src/model/classes/<?=$produit->image?>">
                 <div class="details">
-                    <a href="http://localhost/projet-php-e-com/site-vente-immobilier/src/view/cart.php?id=<?=$produit->id_produit?>" class='paniers'><h4><?=ucwords($produit->nom);?> </h4>
+                    <a href="cart.php?id=<?=$produit->id_produit?>" class='paniers'><h4><?=ucwords($produit->nom);?> </h4>
                     <p>Price: <span><?=number_format($produit->prix,2,',','');?> </span>£ </p>
                     </a> 
                 </div>

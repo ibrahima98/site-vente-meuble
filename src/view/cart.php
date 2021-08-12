@@ -47,7 +47,7 @@ require_once("header.php");
                 <td><span><?=$product->prix ?></span>£</td>
                 <td><span>1</span></td>
                 <td><span><?=$product->prix ?></span>£</td>
-                <td><a href="http://localhost/projet-php-e-com/site-vente-immobilier/src/view/cart.php?del=<?=$product->id_produit ?>" class='paniers'><button>Suprimer</button></a></td>
+                <td><a href="cart.php?del=<?=$product->id_produit ?>" class='paniers'><button>Suprimer</button></a></td>
              
             </tr><?php endforeach ?>
             
