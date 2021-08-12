@@ -2,7 +2,7 @@
 /**
  * page de gestioon des affichage du panier
  */
-//require_once("header.php");
+require_once("header.php");
 
  ?>
  
@@ -25,13 +25,17 @@
             </tr>
             <?php
             require "../../src/controller/control.php";
+            require "../../src/model/classes/Produit/Panier.php";
             $ids=array_keys($_SESSION['panier']);
-
-            
-           // $products = $DB->query("SELECT * FROM produit WHERE id_produit IN ('.implode(',',$ids).')");
-            $produc = $DB->query("SELECT * FROM produit WHERE id_produit IN (17,16,15)");
-             
-            foreach($produc as $product):
+            if(empty($ids)){
+                  $products=array();
+            }else{
+                $products = $DB->query('SELECT *  FROM produit  WHERE id_produit IN (' . implode(',', array_map('intval', $ids)) . ')');
+            }
+          
+           // $produc = $DB->query("SELECT * FROM produit WHERE id_produit IN (17,16,15)");
+         
+            foreach($products as $product):
                   
             ?>
             <tr class='td'>
@@ -43,7 +47,7 @@
                 <td><span><?=$product->prix ?></span>£</td>
                 <td><span>1</span></td>
                 <td><span><?=$product->prix ?></span>£</td>
-                <td><button><a href=""><ion-icon name="trash-outline" class='icon'></ion-icon></a></button></td>
+                <td><a href="http://localhost/projet-php-e-com/site-vente-immobilier/src/view/cart.php?del=<?=$product->id_produit ?>" class='paniers'><button>Suprimer</button></a></td>
              
             </tr><?php endforeach ?>
             

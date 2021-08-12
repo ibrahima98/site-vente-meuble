@@ -18,13 +18,18 @@
     ?>
 
         <div class="boutique-ctn">
-            <a href="article.php?id_produit=<?php echo $produit->id_produit ?>">
+            <a href="article.php?id_produit=<?= $produit->id_produit ?>">
                   <img src="../../src/model/classes/<?= $produit->image ?>">
             </a>
+            <a href="http://localhost/projet-php-e-com/site-vente-immobilier/src/view/cart.php?id=<?= $produit->id_produit ?>"class='paniers'>
             <div class="proprites">
-                <h4><?= ucwords($produit->nom); ?></h4>
+                
+                 <h4><?= ucwords($produit->nom); ?></h4>
                 <p>Price:<?= number_format($produit->prix, 2, ',', ''); ?> £</p>
-            </div>
+                </div>
+                </a>
+               
+            
         </div>
 
     <?php endforeach ?>
