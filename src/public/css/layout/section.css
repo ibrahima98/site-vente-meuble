@@ -78,9 +78,14 @@ th {
   position: absolute;
   top: 35vh;
   left: 30vh;
+<<<<<<< HEAD
 }
 
 .pan {
+=======
+  height: 80vh;
+}.pan{
+>>>>>>> 6c5fe7d2ada1ace14383186b397faf118a1ab2b5
   margin-left: -2vh;
   width: 20vh;
   height: 20vh;
