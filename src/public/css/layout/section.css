@@ -76,6 +76,7 @@ position: absolute;
   position: absolute;
   top: 35vh;
   left: 30vh;
+  height: 80vh;
 }.pan{
   margin-left: -2vh;
   width: 20vh;
