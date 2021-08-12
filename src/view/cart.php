@@ -6,7 +6,7 @@ require_once("header.php");
 
  ?>
  
-<body>
+
     
     <div class='contain-cart'>
             <h2 class="titre">Shopping Cart</h2>
@@ -55,4 +55,5 @@ require_once("header.php");
 
       
     </section>
-</body>
+
+  
