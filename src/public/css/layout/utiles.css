@@ -32,13 +32,15 @@
 }
 /* for images */
 .img-larger {
-  width: 30rem;
+  width: 20rem;
+  height: 20em;
 }
 .img-medium {
   width: 7.5rem;
 }
 .img-smaller {
-  width: 07rem;
+  width: 6rem;
+  height: 4rem;
 }
 /* For Others */
 .outlined {

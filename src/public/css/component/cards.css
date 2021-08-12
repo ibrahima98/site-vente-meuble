@@ -127,6 +127,7 @@
 }
 .ctn-article {
   position: relative;
+  height: 70vh;
   padding-top: 1rem;
   /* background-color: turquoise; */
   text-align: center;
