@@ -21,64 +21,67 @@
   padding-bottom: 5rem;
   display: grid;
   grid-template-columns: 1fr 4fr;
-  
-  
-}.paniers{
+}
+.paniers {
   color: black;
 }
 
-table{
- 
+table {
   margin: auto;
   padding: 1vh;
 }
-tr{
+tr {
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr;
   column-gap: 5vh;
   padding-bottom: 5vh;
- 
-}th{
+}
+th {
   font-size: 1.5rem;
   display: grid;
-   
-}.td{
+}
+.td {
   text-align: center;
-  font-size: 1.2rem;  
+  font-size: 1.2rem;
   border-radius: 2vh;
-  
-}.img1{
+}
+.img1 {
   width: auto;
   height: 10vh;
-}.contain-cart{
-  
+}
+.contain-cart {
   height: 20vh;
   background-color: gainsboro;
 }
 
-.titre{
-position: absolute;
- text-align:start;
-  color: black;
-  font-size: 2.3rem;
-  width: 40vh;
-  left: 30vh;
-  top: 20vh;
-}.paiement{
+.titre {
   position: absolute;
-  right: 28vh;
-  width: 25vh;
-  height: 7vh;
+  text-align: start;
+  color: black;
+  font-size: 2rem;
+  width: 20vw;
+  left: 15vw;
+  top: 20vh;
+}
+
+.paiement {
+  position: absolute;
+  right: 7vw;
+  width: 15vw;
+  /* height: 7vh; */
   top: 20vh;
   font-size: 1.2rem;
   background-color: yellowgreen;
-}.sections{
+}
+
+.sections {
   position: absolute;
   top: 35vh;
   left: 30vh;
-}.pan{
+}
+
+.pan {
   margin-left: -2vh;
   width: 20vh;
   height: 20vh;
-
 }
