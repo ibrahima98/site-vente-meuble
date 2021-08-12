@@ -25,7 +25,7 @@ require_once("header.php");
             </tr>
             <?php
             require "../../src/controller/control.php";
-            require "../../src/model/classes/Produit/Panier.php";
+          
             $ids=array_keys($_SESSION['panier']);
             if(empty($ids)){
                   $products=array();
